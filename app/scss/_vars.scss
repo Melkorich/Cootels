@@ -1,0 +1,53 @@
+//main sceren sizes
+
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xs: 480px;
+$xsm: 320px;
+
+
+//main colors
+
+:root {
+  --color-main: #192252;
+  --color-text: #848FAC;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-orange: #FF620A;
+  --color-bg: #0B265A;
+}
+
+
+//fonts
+%inter-400 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+%inter-500 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+%inter-700 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+%montserrat-600 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+// fansybox error
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

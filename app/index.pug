@@ -1,0 +1,39 @@
+extends base
+
+block content
+  .wrapper 
+    header.header 
+      .header__top 
+        .container 
+          .header__top-inner
+            h1.sr-only 
+            a.logo.header__logo(href="#") Cootels
+            nav.menu 
+              ul.menu__list 
+                li.menu__item 
+                  |
+                  a.menu__link(href="#") Rooms 
+                li.menu__item 
+                  |
+                  a.menu__link(href="#") Reservation 
+                li.menu__item 
+                  |
+                  a.menu__link(href="#") Contacts
+            button.button.header__btn Get Startet
+
+    main.main 
+
+    section.about 
+      .container 
+        .about__item 
+          .about__inner 
+            .about__content
+              h2.about__title.title Nature, Warmth, and Beauty in One Space
+              .about__text.text
+                p One place to release all the stress, bring back happines, and get back to nature. We provide the best room and nature for you. Come visit us anytime you want.
+              button.button.about__btn Reservation
+
+            .about__image 
+              img.about__img(src="images/about/1.png", alt="Beautiful wood house")
+
+  script(src="js/main.min.js")
