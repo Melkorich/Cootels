@@ -1,0 +1,44 @@
+.choose-room {
+  padding: 80px 0;
+
+  &__inner  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 410px;
+    width: 100%;
+  } 
+
+  &__subtitle {
+    display: block;
+    font-size: 16px;
+    @extend %inter-500;
+    color: var(--color-highlight);
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    max-width: 384px;
+    margin-bottom: 32px;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__btn:first-child {
+    margin-right: 10px;
+  }
+
+  &__btn--explore {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #0E1734;
+
+    &:hover {
+      border: 1px solid var(--color-main);
+    }
+  }
+}

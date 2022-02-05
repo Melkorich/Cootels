@@ -8,7 +8,7 @@ block content
           .header__top-inner
             h1.sr-only 
             a.logo.header__logo(href="#") Cootels
-            nav.menu 
+            nav.menu
               ul.menu__list 
                 li.menu__item 
                   |
@@ -19,7 +19,7 @@ block content
                 li.menu__item 
                   |
                   a.menu__link(href="#") Contacts
-            button.button.header__btn Get Startet
+            button.button.header__btn Get started
 
     main.main 
 
@@ -35,5 +35,106 @@ block content
 
             .about__image 
               img.about__img(src="images/about/1.png", alt="Beautiful wood house")
+
+        .about__item 
+          .about__inner 
+            .about__image 
+              img.about__img(src="images/about/2.jpg", alt="Beautiful wood house")
+
+            .about__content
+              h2.title Cozy and Down to Earth Cootage Hotel in Norway.
+              .about__text.text
+                p Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique and spectacular panorama of the Hallerbos Jungle.
+                p Cootels extends along a private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy and beauty with us.
+              button.button.about__btn Learn more
+
+    section.activities 
+      .container 
+        .activities__item 
+          .activities__inner 
+            .activities__content 
+              h2.title Cabin Activities
+              .activities__text.text 
+                p Don’t worry to get bored easily in our cabin. We have so many cabin activities for you to do it alone or with group. Maybe this is the best chance for you to make new friends or even a lover.
+            .activities__image 
+              img.activities__img(src="images/activities/1.jpg", alt="people drinking wine at the table")
+
+        .activities__item 
+          .activities__inner 
+            .activities__image 
+              img.activities__img(src="images/activities/2.jpg", alt="food on the table")
+            .activities__content 
+              h2.title C100% Organic Food
+              .activities__text.text
+                p We served 100% organic, low process and delicious food. We allow our guest to have breakfast or dinner request.What ever made your taste buds happy.
+    
+    include rooms 
+
+    section.choose-room 
+      .container 
+        .choose-room__inner 
+          .choose-room__content
+            span.choose-room__subtitle Start your journey!
+            h2.title.choose-room__title How to Get My Room?
+            .choose-room__text.text You can contact us by phone or email us. Easily tap the contact button below and it will take you to our contact point
+            .choose-room__links 
+              a.choose-room__btn.button(href="#") Contact us
+              a.choose-room__btn.button.choose-room__btn--explore(href="#") Explore more room
+          .choose-room__accordion.accordion
+            include accordion
+
+    section.feedback 
+      .container 
+        .feedback__body 
+          h2.title.feedback__title Hear From Our Happy Customers
+          .feedback__slider 
+            include feedback-slider
+
+    footer.footer 
+      .container 
+        .footer__columns 
+          .footer__column
+            a.logo.footer__logo(href="#") Cootels
+            .footer__text 
+              p Your Best Private <br> Hideway From Crowd. <br> Back to Nature.
+            ul.social-links 
+              li.social-links__item
+                a.social-links__link(href="#")
+                  img(src="images/twitter.svg", alt="twitter icon")
+              li.social-links__item
+                a.social-links__link(href="#")
+                  img(src="images/instagram.svg", alt="twitter icon")
+              li.social-links__item
+                a.social-links__link(href="#")
+                  img(src="images/facebook.svg", alt="twitter icon")
+
+          .footer__column
+            ul.footer__items 
+              li.footer__item.footer__item--title Rooms
+              li.footer__item 
+                a.footer__link(href="#") Single Room
+              li.footer__item 
+                a.footer__link(href="#") Double Room
+              li.footer__item 
+                a.footer__link(href="#") Cabin
+              li.footer__item 
+                a.footer__link(href="#") Custom Room
+
+            ul.footer__items 
+              li.footer__item.footer__item--title Reservation
+              li.footer__item 
+                a.footer__link(href="#") See the Steps
+              li.footer__item 
+                a.footer__link(href="#") Best Time
+
+            ul.footer__items 
+              li.footer__item.footer__item--title Contact
+              li.footer__item 
+                a.footer__link(href="#") Our Number
+              li.footer__item 
+                a.footer__link(href="#") Our Email
+              li.footer__item 
+                a.footer__link(href="#") Our Location
+
 
   script(src="js/main.min.js")
