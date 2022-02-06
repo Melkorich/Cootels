@@ -9,17 +9,28 @@ block content
             h1.sr-only 
             a.logo.header__logo(href="#") Cootels
             nav.menu
+              button.menu__burger 
+                span 
               ul.menu__list 
                 li.menu__item 
                   |
-                  a.menu__link(href="#") Rooms 
+                  a.menu__link(href="#rooms") Rooms 
                 li.menu__item 
                   |
-                  a.menu__link(href="#") Reservation 
+                  a.menu__link(href="#choose-room") Reservation 
                 li.menu__item 
                   |
-                  a.menu__link(href="#") Contacts
-            button.button.header__btn Get started
+                  a.menu__link(href="#contacts") Contacts
+            button.button.header__btn.modal-open Get started
+
+      .modal.hidden
+        .modal-top 
+          span.modal-heading Subscribe for news 
+          button.modal-close &times 
+        form.modal-form(action="#")
+          input.modal-input(type="mail" name="mail" placeholder="Your email") 
+          button.modal-btn.button(type="submit") Subscribe
+      .modal-overlay.hidden 
 
     main.main 
 
@@ -49,7 +60,7 @@ block content
               button.button.about__btn Learn more
 
     section.activities 
-      .container 
+      .container
         .activities__item 
           .activities__inner 
             .activities__content 
@@ -64,13 +75,13 @@ block content
             .activities__image 
               img.activities__img(src="images/activities/2.jpg", alt="food on the table")
             .activities__content 
-              h2.title C100% Organic Food
+              h2.title C100% Organic Food 
               .activities__text.text
                 p We served 100% organic, low process and delicious food. We allow our guest to have breakfast or dinner request.What ever made your taste buds happy.
     
     include rooms 
 
-    section.choose-room 
+    section.choose-room#choose-room  
       .container 
         .choose-room__inner 
           .choose-room__content
@@ -90,7 +101,7 @@ block content
           .feedback__slider 
             include feedback-slider
 
-    footer.footer 
+    footer.footer#contacts 
       .container 
         .footer__columns 
           .footer__column
