@@ -27,9 +27,7 @@
       position: absolute;
       width: 40px;
       height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexc();
       right: 44px;
       top: 50%;
       transform: translateY(-50%);

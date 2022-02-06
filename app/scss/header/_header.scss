@@ -5,9 +5,7 @@
   }
 
   &__top-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexb();
   } 
 
   &__btn {
@@ -32,7 +30,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    transition: transform 0.3s, opacity 0.3s;
+    transition: opacity 0.3s ease-in-out;
   }
 
   &::before,
@@ -43,7 +41,7 @@
     width: 100%;
     height: 2px;
     background-color: var(--color-main);
-    transition: transform 0.3s;
+    transition: all 0.3s ease-in-out;
   }
 
   &::before {
