@@ -6,9 +6,7 @@
   }
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexb();
   }
 
   &__content {
@@ -33,7 +31,7 @@
     .activities__content {
       margin-right: 0;
     }
-    
+
     .activities__image {
       margin-right: 30px;
     }
