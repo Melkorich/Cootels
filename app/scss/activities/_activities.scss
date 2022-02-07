@@ -8,12 +8,13 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__content {
     max-width: 584px;
     width: 100%;
-    margin: auto 30px auto 0;
+    margin-right: 30px;
   }
 
   &__image {
@@ -28,6 +29,11 @@
   }
 
   &__item:nth-child(2n) {
+
+    .activities__content {
+      margin-right: 0;
+    }
+    
     .activities__image {
       margin-right: 30px;
     }

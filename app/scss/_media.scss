@@ -1,7 +1,7 @@
 @media (max-width: 1200px) {
 
   .about__content {
-    margin: auto 30px auto 0;
+    margin-right: 30px;
   }
 
   .about__title {
@@ -178,6 +178,7 @@
 
   .about__content {
     margin: 0 0 30px 0;
+    max-width: 100%;
   }
 
   .about__image {
@@ -196,6 +197,7 @@
 
       .about__content {
         margin-bottom: 30px;
+        max-width: 100%;
       }
 
       .about__image {
@@ -228,7 +230,9 @@
   }
 
   .activities__item {
+
     &:nth-child(2n) {
+
       .activities__inner {
         flex-direction: column-reverse;
       }
