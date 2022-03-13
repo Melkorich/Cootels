@@ -70,11 +70,13 @@
     top: 50%;
     background-color: var(--color-white);
   }
-}
+} 
 
 .menu {
+
   &__list {
     display: flex;
+    padding-right: 30px;
   }
 
   &__item {
